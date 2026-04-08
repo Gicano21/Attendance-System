@@ -98,7 +98,7 @@ export const AdminAuth: React.FC<AdminAuthProps> = ({ onBack, onLoginSuccess }) 
 
     // Send verification code to server
     try {
-      const res = await fetch("http://192.168.1.199:3000/register", {
+      const res = await fetch("https://attendance-api-naza.onrender.com/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -166,7 +166,7 @@ export const AdminAuth: React.FC<AdminAuthProps> = ({ onBack, onLoginSuccess }) 
 
     // Send verification code to server
     try {
-      const res = await fetch("http://192.168.1.199:3000/register", {
+      const res = await fetch("https://attendance-api-naza.onrender.com/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
